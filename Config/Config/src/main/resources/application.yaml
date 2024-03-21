@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: Config-Server
+          uri: https://github.com/JhodanCorredor/Micro-Servicios
+          search-paths: Config-data
+  application:
+    name: Config
